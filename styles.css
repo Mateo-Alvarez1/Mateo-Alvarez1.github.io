@@ -1,0 +1,375 @@
+/*RESETEANDO VALORES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background: linear-gradient(60.37deg, #363544 0%, #19191b 100%);
+}
+
+.parrafos {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8rem;
+    color: var(--gris);
+}
+
+.titulos {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--negro);
+}
+
+.subtitulos {
+    color: var(--blanco);
+    font-size: 22px;
+    font-weight: 400;
+}
+
+/* VARIABLES */
+:root {
+    --negro: #000000;
+    --blanco: #FFFFFF;
+    --gris: #ffffffb3;
+    --grisOscuro: #29313d;
+    --amarillo: #fdb10d;
+    --azul:#5454D4;
+}
+
+/* HEADER */
+#header {
+    width: 100%;
+    height: 6rem;
+    padding: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_img {
+    margin-left: 1.25rem;
+}
+
+.header_ul {
+    width: 45rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.fa-solid {
+    color: var(--blanco);
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--gris);
+}
+
+.header_icons {
+    margin-right: -12.25rem;
+}
+
+/* FORMULARIO */
+
+#formulario {
+    height: 29.5rem;
+    width: 23rem;
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 5%;
+    background: var(--grisOscuro);
+    border: none;
+    border-radius: 5px;
+    top: -45rem;
+    z-index: 10;
+}
+
+#formulario.show2 {
+    top: 4rem;
+    transition: ease-in-out .5s;
+}
+
+.form_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.25rem 2.5rem 0rem 2.5rem;
+}
+
+.fs {
+    font-size: 1.5rem;
+    color: var(--negro);
+    height: 3rem;
+    margin-left: -1rem;
+}
+
+.fa-xmark {
+    color: var(--negro);
+    padding-left: 1.5rem;
+    font-size: 1.25rem;
+}
+
+#formulario legend {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 1rem 0rem 0rem 1.5rem;
+}
+
+#formulario input {
+    height: 1.8rem;
+    width: 20rem;
+    border-radius: 5px;
+    border: none;
+    padding: 0px 0px 0px 5px;
+    font-size: 0.9rem;
+}
+
+.cl {
+    color: var(--blanco);
+}
+
+.sbt_btn {
+    width: 15rem;
+    height: 1.25rem;
+    margin: 2.5rem 0rem 0rem 4rem;
+    padding: 0rem 0rem 1.8rem 0rem;
+    border-radius: 5px;
+    border: none;
+    background: var(--azul);
+    color: var(--blanco);
+    cursor: pointer;
+}
+
+
+/* MAIN */
+.article_inicio {
+    width: 100%;
+    height: 30rem;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./video.png);
+}
+
+.article_text {
+    height: 20rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 20rem 0rem 20rem;
+}
+
+.button_inicio {
+    width: 8rem;
+    height: 2rem;
+    border-radius: 5px;
+    border: none;
+    background: var(--azul);
+    cursor: pointer;
+    color:var(--blanco);
+}
+
+
+/* CARDS */
+
+.article_cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 2.25rem;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.cards {
+    padding: 1.25rem;
+}
+
+/* BANNER */
+
+.article_banner {
+    height: 18.75rem; 
+    background-image: url(./banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.article_titulos {
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 3rem 6.25rem 0rem 6.25rem;
+}
+
+/* FOOTER */
+
+#footer ul {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin-top: 4rem;
+    padding: 1.8rem 0rem 0rem 16.5rem;
+}
+
+.footer-p {
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 2rem 0 0 0;
+    color: var(--azul);
+    text-align: center;
+}
+
+.footer-icons {
+    width: 22%;
+    font-size: 30px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    color: var(--blanco);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/*ANIMACIONES*/
+
+.header_ul li:hover {
+    border-bottom: 1px var(--gris) solid;
+    transition: all .5s;
+}
+
+.fa-solid:hover {
+    opacity: .8;
+    transition: all .5s;
+}
+
+.button_inicio:hover {
+    transform: scale(.95);
+    transition: all .5s;
+}
+
+.fa-xmark:hover {
+    opacity: .8;
+    transition: all .5s;
+    color: var(--gris);
+}
+
+.sbt_btn:hover {
+    transform: scale(.95);
+    transition: all .5s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    transition: ease-in-out .5s;
+}
+
+.footer-icons i:hover {
+   opacity: .5;
+    transition: all .5s;
+}
+
+/* MEDIA QUERIES */
+@media (min-width:1101px) {
+    .fa-bars {
+        display: none;
+    }
+
+    .header_ul {
+        margin-left: -1.8rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .fa-magnifying-glass {
+        display: none;
+    }
+
+    .article_inicio {
+        height: 40rem;
+    }
+
+    .article_text {
+        height: 27.4rem;
+        padding: 9rem 4rem 0rem 4rem;
+        }
+
+    .article_banner{
+        height: 47rem;
+    }
+    
+    .uno{
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        height: 43rem;
+    }
+
+    .dos{
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        height: 35rem;
+    }
+
+    #Start{
+        height: 40rem;
+    }
+
+    #footer ul {
+        flex-direction: column;
+        padding: 3rem 0rem 0rem 3.5rem;
+        margin-top: 20px;
+    }
+
+    .footer-icons {
+        width: 50%;
+    }
+
+    .header_nav,
+    .header_ul {
+        width: 13.5rem;
+        height: 100%;
+        opacity: .9;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 1.8rem 1.5rem;
+        background: var(--grisOscuro);
+        margin-left: -13.6rem;
+    }
+
+    .header_nav.show,
+    .header_ul {
+        margin: 0rem;
+        transition: margin ease-in-out .5s;
+    }
+
+    .header_ul li {
+        padding: .5rem 0rem;
+    }
+
+    #formulario {
+        margin-left: 3.3%;
+        margin-top: 35%;
+        width: 24rem;
+    }
+
+
+}

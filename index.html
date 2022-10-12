@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>EnverNews</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="header">
+
+        <section>
+            <img class="header_img" src="Logo.png" alt="Logo">
+        </section>
+
+        <nav class="header_nav ">
+            <ul class="header_ul show">
+                <li><a class="header_a parrafos" href="#Web1">Web Development</a></li>
+                <li><a class="header_a parrafos" href="#Block1">Blockchain</a></li>
+                <li><a class="header_a parrafos" href="#Machine1">Machine Learning</a></li>
+                <li><a class="header_a parrafos" href="#Cloud1">Cloud computing</a></li>
+                <li><a class="header_a parrafos" href="#Start1">Startup</a></li>
+            </ul>
+        </nav>
+
+        <section class="header_icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </section>
+
+        <section class="menu_btn">
+            <i class="fa-solid fa-bars"></i>
+        </section>
+
+    </header>
+    <!-- MAIN -->
+    <main>
+
+        <form action="." method="post" class="show" id="formulario">
+
+            <div class="form_head">
+                <label for="" class="titulos fs">Registre un usuario</label>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+
+            <legend>
+                <label for="nombre" class="parrafos cl">Nombre</label>
+                <input type="text" name="nombre" id="nombre" required placeholder="Ingrese un Nombre">
+            </legend>
+
+            <legend>
+                <label for="apellido" class="parrafos cl">Apellido</label>
+                <input type="text" name="apellido" id="apellido" required placeholder="Ingrese un Apellido">
+            </legend>
+
+            <legend>
+                <label for="email" class="parrafos cl">Email</label>
+                <input type="email" name="email" id="email" required placeholder="ejemplo@gmail.com">
+            </legend>
+
+            <legend>
+                <label for="contrasenia" class="parrafos cl ">Contraseña</label>
+                <input type="password" name="contrasenia" id="contrasenia" required
+                    placeholder="Ingrese una Contraseña">
+            </legend>
+
+
+            <button type="submit" class="sbt_btn parrafos ">Enviar</button>
+        </form>
+
+        <article class="article_inicio">
+            <section class="article_text">
+                <h1 class="titulos">Enver Community</h1>
+                <p class="parrafos ">Is a community of 922,055 amazing developers.We're a place where coders share, stay
+                    up-to-date and grow their careers.</p>
+                <button class="button_inicio parrafos" type="submit">sign up</button>
+            </section>
+        </article>
+
+        <!-- CARDS -->
+        <article class="article_cards">
+
+            <section class="card">
+                <img src="code-azul.png" alt="noticia1" id="Machine1">
+                <h3 class="subtitulos cards">Machine Learning</h3>
+                <p class="parrafos">Machine learning is an application of artificial intelligence (AI) that provides
+                    systems the ability to automatically learn and improve from experience without being explicitly
+                    programmed.</p>
+            </section>
+
+            <section class="card">
+                <img src="code-amarillo.png" alt="noticia2" id="Block1">
+                <h3 class="subtitulos cards">Blockchain</h3>
+                <p class="parrafos">LIn a few words, a blockchain is a digital ever-growing list of data records. Such a
+                    list is comprised of many blocks of data, which are organized in chronological order and are linked
+                    and secured by cryptographic proofs</p>
+            </section>
+
+            <section class="card">
+                <img src="code-azul.png" alt="noticia3" id="Cloud1">
+                <h3 class="subtitulos cards">Cloud Computing</h3>
+                <p class="parrafos">The term ‘cloud computing’ also refers to the technology that makes cloud work. This
+                    includes some form of virtualized IT infrastructure servers, operating system software, networking,
+                    and other infrastructure that’s abstracted using special software.</p>
+            </section>
+
+            <section class="card">
+                <img src="code-amarillo.png" alt="noticia4" id="Web1">
+                <h3 class="subtitulos cards">Web Development</h3>
+                <p class="parrafos">Web development refers to the building, creating, and maintaining of websites. It
+                    includes aspects such as web design, web publishing, web programming, and database management. It is
+                    the creation of an application that works over the internet websites.</p>
+            </section>
+
+        </article>
+
+        <!-- BANNER 1 -->
+
+        <article class="article_banner " id="Start1">
+            <section class="article_titulos uno">
+                <h2 class="subtitulos">Bdeo: Videoperitación para el sector seguros</h2>
+                <p class="parrafos">Nacida Madrid, la startup Bdeo ha creado una plataforma online de videoperitación
+                    para evitar el fraude. Esta startup, que forma parte de nuestra quinta Lista Emprendedores,
+                    proporciona un paquete completo de inteligencia visual para evitar el fraude en los procesos
+                    tradicionales de gestión de siniestros, reduciendo los altos costes operativos.</p>
+                <button class="button_inicio parrafos " class="parrafos" type="submit">Read More</button>
+            </section>
+        </article> 
+
+        <!-- CARDS 2 -->
+        <article class="article_cards">
+
+            <section class="card">
+                <img src="code-azul.png" alt="noticia1" id="Machine">
+                <h3 class="subtitulos cards">Machine Learning</h3>
+                <p class="parrafos">Machine learning is an application of artificial intelligence (AI) that provides
+                    systems the ability to automatically learn and improve from experience without being explicitly
+                    programmed.</p>
+            </section>
+
+            <section class="card">
+                <img src="code-amarillo.png" alt="noticia2" id="Block">
+                <h3 class="subtitulos cards">Blockchain</h3>
+                <p class="parrafos">In a few words, a blockchain is a digital ever-growing list of data records. Such a
+                    list is comprised of many blocks of data, which are organized in chronological order and are linked
+                    and secured by cryptographic proofs</p>
+            </section>
+
+            <section class="card">
+                <img src="code-azul.png" alt="noticia3" id="Cloud">
+                <h3 class="subtitulos cards">Cloud Computing</h3>
+                <p class="parrafos">The term ‘cloud computing’ also refers to the technology that makes cloud work. This
+                    includes some form of virtualized IT infrastructure—servers, operating system software, networking,
+                    and other infrastructure that’s abstracted using special software. </p>
+            </section>
+
+            <section class="card">
+                <img src="code-amarillo.png" alt="noticia4" id="Web">
+                <h3 class="subtitulos cards">Web Development</h3>
+                <p class="parrafos">Web development refers to the building, creating, and maintaining of websites. It
+                    includes aspects such as web design, web publishing, web programming, and database management. It is
+                    the creation of an application that works over the internet websites</p>
+            </section>
+
+        </article> 
+
+        <!-- BANNER 2 -->
+        <article class="article_banner" id="Start">
+            <section class="article_titulos dos">
+                <h2 class="subtitulos">Capchase: el impulso a la economía de suscripción.</h2>
+                <p class="parrafos">Capchase es una startup nacida en plena pandemia -mayo de 2020- que surge con el
+                    propósito de impulsar el crecimiento de la economía de suscripción apoyando a los fundadores de SaaS
+                    a evitar la dilución y la financiación cara</p>
+                <button class="button_inicio parrafos " class="parrafos" type="submit">Read More</button>
+            </section>
+        </article>
+
+    </main>
+    <!-- FOOTER -->
+    <footer id="footer">
+        <section>
+            <ul>
+                <li><a class="header_a parrafos" href="#Web">Web Development</a></li>
+                <li><a class="header_a parrafos" href="#Block">Blochain</a></li>
+                <li><a class="header_a parrafos" href="#Machine">Machine Learning</a></li>
+                <li><a class="header_a parrafos" href="#Cloud">Cloud computing</a></li>
+                <li><a class="header_a parrafos" href="#Start">Startup</a></li>
+            </ul>
+        </section>
+        <section>
+            <p class="footer-p">Copyright 2020. All Rights Reserved</p>
+        </section>
+        <section class="footer-icons">
+            <a href="https://github.com/Mateo-Alvarez1" target="_blank"><i class="fa-brands fa-github"></i></a><a
+                href="https://www.linkedin.com/in/matualvarez/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a><i class="fa-brands fa-twitter"></i><i
+                class="fa-brands fa-instagram"></i>
+        </section>
+    </footer>
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- CUSTOM JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>
